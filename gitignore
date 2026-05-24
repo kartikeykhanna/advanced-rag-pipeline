@@ -1,0 +1,70 @@
+# =============================================================================
+# .gitignore — Advanced RAG Pipeline
+# =============================================================================
+
+# ── API Keys & Secrets (NEVER commit these) ───────────────────────────────────
+.env
+.env.*
+secrets.json
+api_keys.txt
+*_key.txt
+
+# ── Chroma vector store (large binary DB files) ───────────────────────────────
+chroma_db/
+chroma_db_gemini/
+/tmp/chroma_db*/
+*.sqlite3
+*.parquet
+
+# ── HuggingFace model cache (gigabytes — never commit) ───────────────────────
+.cache/
+hf_cache/
+huggingface/
+models/
+*.safetensors
+*.bin
+*.pt
+*.ckpt
+
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+*.egg
+pip-log.txt
+
+# ── Virtual environments ──────────────────────────────────────────────────────
+venv/
+env/
+ENV/
+.venv/
+.env/
+
+# ── Jupyter / Colab ───────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+*.ipynb_meta
+
+# ── Generated / output files ──────────────────────────────────────────────────
+demo_document.md
+*.log
+outputs/
+results/
+
+# ── OS files ──────────────────────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+Thumbs.db
+desktop.ini
+
+# ── IDE ───────────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
