@@ -1,21 +1,3 @@
-# =============================================================================
-# ADVANCED PRODUCTION RAG PIPELINE
-# Target: Technical Academic Research & Financial Intelligence Assistant
-# =============================================================================
-#
-# INSTALLATION (run once before executing this script):
-#
-# pip install langchain langchain-community langchain-anthropic langchain-huggingface
-# pip install chromadb sentence-transformers rank-bm25 transformers torch
-# pip install pypdf unstructured ragas datasets anthropic openai
-# pip install accelerate einops huggingface_hub
-#
-# ENVIRONMENT VARIABLES REQUIRED:
-#   ANTHROPIC_API_KEY  — for Claude LLM synthesis
-#   OPENAI_API_KEY     — used by Ragas evaluation framework internally
-#
-# =============================================================================
-
 import os
 import sys
 import logging
